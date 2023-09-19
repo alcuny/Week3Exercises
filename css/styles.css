@@ -1,0 +1,59 @@
+/*https://www.geeksforgeeks.org/how-to-set-alternate-table-row-color-using-css/
+source for the odd and even coloured rows*/
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #b7d0ff;
+    font:bold;
+    padding: 12px 0px 12px 6px;
+    border-bottom: 2px solid #808080;
+}
+
+table tbody td {
+    padding: 6px;
+    border-bottom: 1px solid #808080;
+}
+
+.center {
+    margin: auto;
+    padding: 60px;
+    width: 60%;
+}
+
+.center table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.center h1 {
+    text-align: center;
+}
+
+.center table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.center table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.center table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.center table tbody tr.highEmployment {
+    background-color: #abffbd;
+}
+
+.center table tbody tr.lowEmployment {
+    background-color: #ff9e9e;
+}
